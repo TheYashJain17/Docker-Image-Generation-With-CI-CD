@@ -1,6 +1,10 @@
 name: Docker Image Generation With Github Actions
 
-on: workflow_dispatch
+on:
+  push:
+    branches:
+      - main
+
 
 jobs:
   build:
